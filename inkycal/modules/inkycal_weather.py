@@ -127,7 +127,7 @@ class Weather(inkycal_module):
       logger.info('Connection test passed')
     else:
       logger.exception('Network could not be reached :(')
-      raise
+      raise Exception('Network could not be reached :(')
 
     def get_moon_phase():
       """Calculate the current (approximate) moon phase"""
